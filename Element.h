@@ -20,6 +20,7 @@ public:
 	Element(string, string, string, int); // (ISBN, bookName, authorName, Volume)
 
 	// These functions are reusable for other element types
+	string getName();
 	string getKey();
 	void setKey(string);
 
@@ -33,6 +34,5 @@ public:
 
 
 
-private:
-//	int bookVolume;
+
 };

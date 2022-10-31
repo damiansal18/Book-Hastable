@@ -117,13 +117,13 @@ void LinkedList::addToRear(Element newBook)
 	}
 }
 
-void LinkedList::deleteFirst(Element& frontElement)
+void LinkedList::deleteFirst()
 {
 	if (isEmpty())
 		throw underFlow();
-	else if (front->next == NULL)
+	else if (front->next == NULL) // one element in the list
 	{
-		frontElement = front->book;
+		//frontElement = front->book;
 
 		delete front;
 
@@ -131,10 +131,12 @@ void LinkedList::deleteFirst(Element& frontElement)
 		rear = NULL;
 
 		count--;
+
+		cout << "Last element in the list has been removed... " << endl;
 	}
-	else
+	else // multiple elements, make the second element the front.
 	{
-		frontElement = front->book;
+		//frontElement = front->book;
 
 		Node* second; //pointer to the second element in the list
 		second = front->next;
@@ -147,32 +149,138 @@ void LinkedList::deleteFirst(Element& frontElement)
 	}
 }
 
-void LinkedList::deleteLast(Element& lastElement)
+void LinkedList::deleteLast()
 {
+	
 	if (isEmpty())
 		throw underFlow();
-	else if (front->next == NULL)
+	else
 	{
-		lastElement = rear->book; // setting the the rears element as the last elem
-		delete rear;
+		Node* temp;
+		temp = front; // create a temporary pointer pointing to the memory address of "front" fro traversal
+
+		while (temp->next != NULL &&)
+			temp = temp->next;  // traverse to the end of list
+
+		front = temp;
+		
+		Node* waste;
+		waste = front;
+		front = NULL;
+		rear = NULL;
+
+		delete waste;
+	}
+}
+
+void LinkedList::deleteAt(int pos)
+{
+	if (pos > count || pos < 1)
+		throw outOfRange();
+	else if (pos == 1)
+	{
+		deleteFirst();
+	}
+	else if (pos == count)
+	{
+		deleteLast();
+	}
+	else
+	{
+		int prevPos = pos - 1;
+		int nextPos = pos + 1;
+
+		Node* left;
+		Node* current;
+		Node* right;
+
+		moveTo(prevPos, left); //set a pointer to the previous element of the current one, to it's left.
+		moveTo(nextPos, right); //set a pointer to the next element of the current one, to it's right.
+		moveTo(pos, current); //set a pointer to current element.
+
+		//book = current->book; 
+
+		delete current;
+
+		//cout << "Book: " + book.getName + "was deleted from position: " + pos << endl;
+
+		left->next = right;
+
+		count--;
 
 	}
 }
 
-void LinkedList::deleteAt(int, Element&)
+void LinkedList::insertAt(int pos, Element& book)
 {
+	if (pos > count || pos < 1)
+		throw outOfRange();
+	else if (pos == 1)
+		addToFront(book);
+	else if (pos == count)
+		addToRear(book);
+	else {
+		int prevPos = pos - 1;
+		int nextPos = pos + 1;
+
+		Node* left;
+		Node* current;
+		Node* right;
+
+		moveTo(prevPos, left); //set a pointer to the previous element of the current one, to it's left.
+		moveTo(nextPos, right); //set a pointer to the next element of the current one, to it's right.
+		moveTo(pos, current);  //set a pointer to current element.
+
+		// new node is allocated , info is input
+		current = new Node;
+		current->book = book;
+
+		// new node is set at the desired position by rearranging pointers
+		left->next = current;
+		current->next = right;
+
+		count++;
+	}
 }
 
-void LinkedList::insertAt(int, Element&)
+LinkedList::LinkedList(const LinkedList& original)
 {
-}
+	front = NULL;
+	rear = NULL;
+	count = 0;
 
-LinkedList::LinkedList(const LinkedList&)
-{
-}
+	Node* pointer;
+	pointer = original.front;
 
-LinkedList& LinkedList::operator=(const LinkedList&)
-{
+	while (pointer != NULL)
+	{
+		this->addToRear(pointer->book);
+
+		pointer = pointer->next;
+	}
 	
+}
+
+LinkedList& LinkedList::operator=(const LinkedList& RHS)
+{
+	Element temp;
+	
+	if (&RHS != this)
+	{
+		while (!this->isEmpty())
+			this->deleteLast();
+
+		Node* pointer;
+		pointer = RHS.front;
+
+		while (pointer != NULL) {
+
+			this->addToRear(pointer->book);
+			pointer = pointer->next;
+		}
+	}
+
+	return *this;
+
 }
 

@@ -31,11 +31,11 @@ public:
 
 	void addToRear(Element); // adding an element at the rear of the list
 
-	void deleteFirst(Element&); // the front element of the list is obtained by reference to be deleted
+	void deleteFirst(); // the front element of the list is to be deleted
 
-	void deleteLast(Element&); // the rear element of the list is obtained by reference to be deleted
+	void deleteLast(); // the rear element of the list is to be deleted
 
-	void deleteAt(int, Element&); // deleting the element at the specified position(int)
+	void deleteAt(int); // deleting the element at the specified position(int)
 
 	void insertAt(int, Element&); // inserts an element at the specified position(int)
 
