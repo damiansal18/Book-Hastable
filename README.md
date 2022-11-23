@@ -1,2 +1,3 @@
-# Book-Hastable
-A book directory implemented with a hash table and linked list.
+
+In main.cpp user is given options to use the book directory. 
+Results from an example run in the input-output-files directory
