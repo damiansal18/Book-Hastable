@@ -1,0 +1,317 @@
+ What is the input file? inputfile
+
+MENU************************:
+1. Load data from a file.
+2. Display table.
+3. Search using ISBN.
+4. Add a new entry.
+5. Delete an entry.
+6. Save data to a file.
+7. Exit.
+==>1
+Adding to book to list...
+Adding to book to list...
+Adding to book to list...
+Adding to book to list...
+Adding to book to list...
+Adding to book to list...
+Adding to book to list...
+Data has been uploaded from the input file.
+
+MENU************************:
+1. Load data from a file.
+2. Display table.
+3. Search using ISBN.
+4. Add a new entry.
+5. Delete an entry.
+6. Save data to a file.
+7. Exit.
+==>2
+[EMPTY]
+[EMPTY]
+968-16-1575-1 ElCorazonDelHombre ErichFrom 5
+978-0-06028-223-3 WhereTheWildThingsAre MauriceSandak 50
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+978-0-7653-8102-6 Elantris BrandonSanderson 10
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+978-1-97473-217-3 OnePiece EchiroOda 99
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+978-1-58638-019-9 BhagvadGita EknathEaswaran 100
+[EMPTY]
+978-0-575-09746-9 WarBreaker BrandonSanderson 3
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+968-15-1045-3 Knulp HermanHesse 1
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+
+MENU************************:
+1. Load data from a file.
+2. Display table.
+3. Search using ISBN.
+4. Add a new entry.
+5. Delete an entry.
+6. Save data to a file.
+7. Exit.
+==>1
+Data has been uploaded from the input file.
+
+MENU************************:
+1. Load data from a file.
+2. Display table.
+3. Search using ISBN.
+4. Add a new entry.
+5. Delete an entry.
+6. Save data to a file.
+7. Exit.
+==>3
+Enter an ISBN to look for: 948-1-9747-3217-3
+Invalid ISBN! Make sure inital numbers are correct.
+Enter an ISBN to look for: 978-1-9747-3217-3
+Input ISBN is not in the system.
+Not found.
+
+MENU************************:
+1. Load data from a file.
+2. Display table.
+3. Search using ISBN.
+4. Add a new entry.
+5. Delete an entry.
+6. Save data to a file.
+7. Exit.
+==>4
+Enter an ISBN: 948-1-9747-3217-3
+Invalid ISBN! Make sure inital numbers are correct.
+Enter an ISBN: 978-1-9747-3217-3
+Enter a name: OnePiece
+Enter an Author: EchiroOda
+Enter a volume number: 100
+Adding to book to list...
+In slot: 21 added.
+
+MENU************************:
+1. Load data from a file.
+2. Display table.
+3. Search using ISBN.
+4. Add a new entry.
+5. Delete an entry.
+6. Save data to a file.
+7. Exit.
+==>2
+[EMPTY]
+[EMPTY]
+968-16-1575-1 ElCorazonDelHombre ErichFrom 5
+978-0-06028-223-3 WhereTheWildThingsAre MauriceSandak 50
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+978-0-7653-8102-6 Elantris BrandonSanderson 10
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+978-1-97473-217-3 OnePiece EchiroOda 99 978-1-9747-3217-3 OnePiece EchiroOda 100
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+978-1-58638-019-9 BhagvadGita EknathEaswaran 100
+[EMPTY]
+978-0-575-09746-9 WarBreaker BrandonSanderson 3
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+968-15-1045-3 Knulp HermanHesse 1
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+
+MENU************************:
+1. Load data from a file.
+2. Display table.
+3. Search using ISBN.
+4. Add a new entry.
+5. Delete an entry.
+6. Save data to a file.
+7. Exit.
+==>5
+Enter an ISBN to delete : 928-15-1045-3
+Invalid ISBN! Make sure inital numbers are correct.
+Enter an ISBN to delete : 968-15-1045-3
+In slot: 42 deleted.
+
+MENU************************:
+1. Load data from a file.
+2. Display table.
+3. Search using ISBN.
+4. Add a new entry.
+5. Delete an entry.
+6. Save data to a file.
+7. Exit.
+==>2
+[EMPTY]
+[EMPTY]
+968-16-1575-1 ElCorazonDelHombre ErichFrom 5
+978-0-06028-223-3 WhereTheWildThingsAre MauriceSandak 50
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+978-0-7653-8102-6 Elantris BrandonSanderson 10
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+978-1-97473-217-3 OnePiece EchiroOda 99 978-1-9747-3217-3 OnePiece EchiroOda 100
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+978-1-58638-019-9 BhagvadGita EknathEaswaran 100
+[EMPTY]
+978-0-575-09746-9 WarBreaker BrandonSanderson 3
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+
+MENU************************:
+1. Load data from a file.
+2. Display table.
+3. Search using ISBN.
+4. Add a new entry.
+5. Delete an entry.
+6. Save data to a file.
+7. Exit.
+==>6
+[EMPTY]
+[EMPTY]
+968-16-1575-1 ElCorazonDelHombre ErichFrom 5
+978-0-06028-223-3 WhereTheWildThingsAre MauriceSandak 50
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+978-0-7653-8102-6 Elantris BrandonSanderson 10
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+978-1-97473-217-3 OnePiece EchiroOda 99 978-1-9747-3217-3 OnePiece EchiroOda 100
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+978-1-58638-019-9 BhagvadGita EknathEaswaran 100
+[EMPTY]
+978-0-575-09746-9 WarBreaker BrandonSanderson 3
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+[EMPTY]
+Sent data to output file!
+
+MENU************************:
+1. Load data from a file.
+2. Display table.
+3. Search using ISBN.
+4. Add a new entry.
+5. Delete an entry.
+6. Save data to a file.
+7. Exit.
+==>7
+No action.
